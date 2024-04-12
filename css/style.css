@@ -6,20 +6,40 @@
 
 div.img1{
     background-color: #ff0000;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 div.img2{
     background-color:green;
-}
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;}
 
 div.img3{
     background-color:yellow;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 h1{
     color: yellow;
+    text-align: center;
+
 }
 
 h1.green{
     color: green;
 }
+
+.img2{
+    margin: auto;
+    display: block;
+}
+
+.button{
+    font-weight: bolder;
+}
+
