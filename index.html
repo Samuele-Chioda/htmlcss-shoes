@@ -1,46 +1,60 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoes</title>
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
-    <div class="big-div">
-    <section class="first-section">
-        <div class="img1">
-            <div class="button">
-                <button>
-                    <a href="img1">1</a>
-                </button>
-                <button>
-                    <a href="img2">2</a>
-                </button>
-                <button>
-                    <a href="img3">3</a>
-                </button>
+    
+    <main>
+
+        <div class="big-div">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#img1">
+                        <button>
+                            1
+                        </button>
+                    </a>
+                    </li>
+                    <li>
+                        <a href="#img2">
+                            <button>
+                                2
+                            </button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#img3">
+                            <button>
+                                3
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- immagini e descrizioni -->
+            <div class="img1">
+                <img id="img1" src="./img/01.png" alt="img1">
+                <h1>IL NOSTRO MODELLO <br> DI PUNTA</h1>
             </div>
-            <img src="./img/01.png" alt="img1">
-            <h1>IL NOSTRO MODELLO DI PUNTA</h1>
+            <div class="img2">
+                <img id="img2" src="./img/02.png" alt="img1">
+                <h1>IL NOSTRO MODELLO <br> DI PUNTA</h1>
+            </div>
+            <div class="img3">
+                <img id="img3" src="./img/03.png" alt="img1">
+                <h1 class="green">IL NOSTRO MODELLO <br> DI PUNTA</h1>
+            </div>
         </div>
-    </section>
 
-    <section class="second-section">
-        <div class="img img2">
-            <img src="./img/02.png" alt="img1">
-            <h1>IL NOSTRO MODELLO DI PUNTA</h1>
-        </div>
-    </section>
-
-    <section class="third-section">
-        <div class="img3">
-            <img src="./img/03.png" alt="img1">
-            <h1 class="green">IL NOSTRO MODELLO DI PUNTA</h1>
-        </div>
-    </section>
-    </div>
+    </main>
 </body>
 
 </html>
