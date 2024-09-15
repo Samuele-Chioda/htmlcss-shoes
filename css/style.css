@@ -1,31 +1,40 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
 }
 
-div.img1{
-    background-color: #ff0000;
-    text-align: center;
-    height: 100vh;
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+    /* Evita lo scrolling orizzontale */
+}
+
+div.img1,
+div.img2,
+div.img3 {
+    min-height: 100vh;
+    display: flex;
     justify-content: center;
-    height: 100vh;
+    align-items: center;
+    scroll-margin-top: 0;
+    /* Correzione per evitare che si veda un pezzo della sezione successiva */
 }
 
-div.img2{
-    background-color:green;
-    text-align: center;
-    height: 100vh;
-
+div.img1 {
+    background-color: #ff0000;
 }
 
-div.img3{
-    background-color:yellow;
-    text-align: center;
-    height: 100vh;
+div.img2 {
+    background-color: green;
 }
 
-h1{
+div.img3 {
+    background-color: yellow;
+}
+
+h1 {
     color: yellow;
     text-align: center;
     text-transform: uppercase;
@@ -33,29 +42,41 @@ h1{
     font-weight: bold;
 }
 
-h1.green{
+h1.green {
     color: green;
 }
 
-nav{
-    display: flex;
-    float: right;
+/* Bottoni fissi in alto a sinistra */
+nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    /* Assicura che i bottoni siano sopra gli altri elementi */
 }
 
-ul{
+ul {
     list-style-type: none;
     display: flex;
-    padding: 15px;
+    flex-direction: column;
+    /* Bottoni in colonna */
+    padding: 0;
 }
 
-button{
-    border: 50%;
+ul li {
+    margin-bottom: 10px;
+}
+
+button {
+    border: 1px solid black;
     padding: 0.5rem;
     border-radius: 50%;
     font-weight: bolder;
-    cursor: pointer;  /*  aggiunge la manina quando si va con il mouse sopra ad un bottone */
+    cursor: pointer;
 }
 
-div.bigdiv{
-    position: relative;
+/* Correzione margine extra */
+body {
+    margin: 0;
+    overflow-x: hidden;
 }
