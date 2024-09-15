@@ -8,18 +8,16 @@ html,
 body {
     height: 100%;
     overflow-x: hidden;
-    /* Evita lo scrolling orizzontale */
 }
 
 div.img1,
 div.img2,
 div.img3 {
-    min-height: 100vh;
+    min-height: 115vh;
     display: flex;
     justify-content: center;
     align-items: center;
     scroll-margin-top: 0;
-    /* Correzione per evitare che si veda un pezzo della sezione successiva */
 }
 
 div.img1 {
@@ -46,20 +44,17 @@ h1.green {
     color: green;
 }
 
-/* Bottoni fissi in alto a sinistra */
 nav {
     position: fixed;
     top: 20px;
     left: 20px;
     z-index: 1000;
-    /* Assicura che i bottoni siano sopra gli altri elementi */
 }
 
 ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    /* Bottoni in colonna */
     padding: 0;
 }
 
@@ -75,7 +70,6 @@ button {
     cursor: pointer;
 }
 
-/* Correzione margine extra */
 body {
     margin: 0;
     overflow-x: hidden;
